@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="menu.style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <title>Meneu</title>
+</head>
+<body>
+    <div style="width: 0;height: 0;"> <video id="play" class="play"  autoplay onended="end()" src="/no_huds/ubilogo.mp4"></video></div>
+   
+    <div id="JustDance" class="JustDance">
+        <div style="width: 0;height: 0;" id="cubes" class="cubes">
+            <img style="width: 1200px;position: relative;left: 198px;top: 38px;" src="/img/menu.png" alt="">
+        </div>
+        <div style="width: 0;height: 0;"><img class="c1" src="/img/Gamemode_coach_01.png" alt=""></div>
+        <div style="width: 0;height: 0;"><img class="c2" src="/img/Gamemode_coach_02.png" alt=""></div>
+        <div style="width: 0;height: 0;"><img class="c3" src="/img/Gamemode_coach_03.png" alt=""></div>
+        <div style="width: 0;height: 0;"><img class="c4" src="/img/Gamemode_coach_04.png" alt=""></div>
+   <a style="text-decoration: none;" href="index.html"><div id="selectJustDance" class="selectJustDance">
+            <h1 id="nameMode" class="nameMode">Just Dance</h1>
+            <h3 id="desc" class="desc">Enjoy your favorite hits with <br> your friends and family!</h3>
+        </div></a>     
+    </div>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script>
+        function end(){
+            var endy = $('#play');
+        console.log(endy.attr('class'));
+        endy.removeAttr('class', 'play');
+        endy.attr('class',  'none') 
+        }
+    </script>
+</body>
+</html>

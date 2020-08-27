@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.selectJustDance{
+    background-color: #fa7300;
+    width: 420px;
+    height: 150px;
+    position: relative;
+    border-radius: 15px;
+    top: 630px;
+    left: 550px;
+}
+
+.nameMode{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+    position: relative;
+    top: 0px;
+    left: 85px;
+    font-size: 45px;
+
+}
+
+.desc{
+    font-family: 'Noto Sans JP', sans-serif;
+    color: white;
+    position: relative;
+    top: 0px;
+    left: 85px;
+
+}
+
+.c1{
+    z-index: 135;position: relative;width: 401px;left: 194px;bottom: 70px;top: 0px;
+    animation-delay:9s;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: sweam1 2s infinite;
+}
+
+@keyframes sweam1 {
+    from{
+        left: 194px;
+    }
+
+    50%{
+        left: 215px;
+    }
+    to{
+        left: 194px;
+    }
+}
+
+.c2{
+    width: 430px;position: relative;z-index: 101;left: 408px; bottom: 111px;
+    animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: sweam2 4.5s infinite;
+}
+
+@keyframes sweam2 {
+    from{
+        left: 408px;
+    }
+
+    50%{
+        left: 377px;
+    }
+    to{
+        left: 408px;
+    }
+}
+.c3{
+    position: relative;width: 473px;left: 684px; z-index: 100;bottom: 179px;
+    animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: sweam3 4s infinite;
+}
+
+@keyframes sweam3 {
+    from{
+        left: 684px;
+    }
+
+    50%{
+        left: 640px;
+    }
+    to{
+        left: 684px;
+    }
+}
+
+.c4{
+    width: 600px;position: relative;left: 800px;top: 35px;z-index: 100;
+    animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation: sweam4 3.5s infinite;
+}
+
+@keyframes sweam4 {
+    from{
+        left: 800px;
+    }
+
+    50%{
+        left: 821px;
+    }
+    to{
+        left: 800px;
+    }
+}
+
+.play{
+    height: 864px;position: relative;z-index: 1111;
+}
+
+.none{
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+img{
+    pointer-events: none;
+}
+
+#play{
+    pointer-events: none;
+}
